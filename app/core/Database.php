@@ -6,7 +6,7 @@ class Database
 
     protected $severname = "localhost";
     protected $username = "root";
-    protected $password = "kalosonits14";
+    protected $password = "123456";
     protected $dbname = "infotech_db";
 
     function __construct()
