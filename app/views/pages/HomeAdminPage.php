@@ -352,23 +352,23 @@
                         <div class="account-wrap">
                             <div class="account-item clearfix js-item-menu">
                                 <div class="image">
-                                    <img src="<?= ASSETS ?>/images/icon/avatar-01.jpg" alt="John Doe" />
+                                    <img src="<?= ASSETS ?>/upload/<?= $_SESSION['user_avatar'] ?>" alt="John Doe" />
                                 </div>
                                 <div class="content">
-                                    <a class="js-acc-btn" href="#">john doe</a>
+                                    <a class="js-acc-btn" href="#"><?= $_SESSION['user_name'] ?></a>
                                 </div>
                                 <div class="account-dropdown js-dropdown">
                                     <div class="info clearfix">
                                         <div class="image">
                                             <a href="#">
-                                                <img src="<?= ASSETS ?>/images/icon/avatar-01.jpg" alt="John Doe" />
+                                                <img src="<?= ASSETS ?>/upload/<?= $_SESSION['user_avatar'] ?>" alt="John Doe" />
                                             </a>
                                         </div>
                                         <div class="content">
                                             <h5 class="name">
-                                                <a href="#">john doe</a>
+                                                <a href="#"><?= $_SESSION['user_name'] ?></a>
                                             </h5>
-                                            <span class="email">johndoe@example.com</span>
+                                            <span class="email"><?= $_SESSION['user_email'] ?></span>
                                         </div>
                                     </div>
                                     <div class="account-dropdown__body">
@@ -386,7 +386,7 @@
                                         </div>
                                     </div>
                                     <div class="account-dropdown__footer">
-                                        <a href="#">
+                                        <a href="/login/logout/">
                                             <i class="zmdi zmdi-power"></i>Logout</a>
                                     </div>
                                 </div>

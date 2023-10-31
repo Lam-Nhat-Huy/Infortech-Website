@@ -5,40 +5,55 @@
                 <div class="login-content">
                     <div class="login-logo">
                         <a href="#">
-                            <img src="<?= ASSETS ?>/images/icon/logo.png" alt="CoolAdmin">
+                            <img src="<?= ASSETS ?>/images/infotech-logo.png" alt="CoolAdmin">
                         </a>
                     </div>
                     <div class="login-form">
-                        <form action="" method="post">
+                        <form action="" method="post" enctype="multipart/form-data" class="needs-validation was-validated">
                             <div class="form-group">
                                 <label>Username</label>
-                                <input class="au-input au-input--full" type="text" name="username" placeholder="Username">
+                                <input class="au-input au-input--full" type="text" name="name" placeholder="Username" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid username
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label>Email Address</label>
-                                <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
+                                <input class="au-input au-input--full" type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <input class="au-input au-input--full" type="text" name="address" placeholder="Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input class="au-input au-input--full" type="number" min="0" name="phone" placeholder="Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="select" class=" form-control-label">Role Id</label>
+                                <select name="role_id" id="role_id" class="form-control">
+                                    <option value="1">User</option>
+                                    <option value="0">Admin</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                <input class="au-input au-input--full" type="password" name="password" placeholder="Password" required>
                             </div>
-                            <div class="login-checkbox">
-                                <label>
-                                    <input type="checkbox" name="aggree">Agree the terms and policy
-                                </label>
+                            <div class="form-group">
+                                <label>Password Repaet</label>
+                                <input class="au-input au-input--full" type="password" name="cpassword" placeholder="Password repaet" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Avatar</label>
+                                <input class="" type="file" name="avatar" placeholder="Avatar" required>
                             </div>
                             <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">register</button>
-                            <div class="social-login-content">
-                                <div class="social-button">
-                                    <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
-                                    <button class="au-btn au-btn--block au-btn--blue2">register with twitter</button>
-                                </div>
-                            </div>
                         </form>
                         <div class="register-link">
                             <p>
                                 Already have account?
-                                <a href="#">Sign In</a>
+                                <a href="/login/">Sign In</a>
                             </p>
                         </div>
                     </div>

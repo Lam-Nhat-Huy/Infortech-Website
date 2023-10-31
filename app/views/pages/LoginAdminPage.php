@@ -5,7 +5,7 @@
                 <div class="login-content">
                     <div class="login-logo">
                         <a href="#">
-                            <img src="<?= ASSETS ?>/images/icon/logo.png" alt="CoolAdmin">
+                            <img src="<?= ASSETS ?>/images/infotech-logo.png" alt="CoolAdmin">
                         </a>
                     </div>
                     <div class="login-form">
@@ -19,9 +19,6 @@
                                 <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
                             </div>
                             <div class="login-checkbox">
-                                <label>
-                                    <input type="checkbox" name="remember">Remember Me
-                                </label>
                                 <label>
                                     <a href="#">Forgotten Password?</a>
                                 </label>
@@ -37,7 +34,7 @@
                         <div class="register-link">
                             <p>
                                 Don't you have account?
-                                <a href="#">Sign Up Here</a>
+                                <a href="/register/">Sign Up Here</a>
                             </p>
                         </div>
                     </div>
