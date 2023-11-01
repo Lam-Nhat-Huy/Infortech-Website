@@ -351,9 +351,9 @@
                         </div>
                         <div class="account-wrap">
                             <div class="account-item clearfix js-item-menu">
-                                <div class="image">
+                                <diBav class="image">
                                     <img src="<?= ASSETS ?>/images/icon/avatar-01.jpg" alt="John Doe" />
-                                </div>
+                                </diBav>
                                 <div class="content">
                                     <a class="js-acc-btn" href="#">john doe</a>
                                 </div>
